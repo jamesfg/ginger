@@ -1,0 +1,17 @@
+
+
+<div class="page-title">Articles</div>
+<mat-divider></mat-divider>
+<div *ngFor="let item of articles; let i = index">
+    <div class="article-item" (click)="openArticle(item.link[0]['$'].href)">
+        <div class="title">{{item.title}} <span class="paging-item">{{i +1}}/{{articles.length}}</span></div>
+        
+        <div class="preview">{{item.summary}}</div>
+        <div class="info-container">
+            <div class="info"><mat-icon>calendar_today</mat-icon><div class="publish">{{item.pubDate}}</div></div>
+            <div class="info"><mat-icon>account_box</mat-icon><div class="author"><span *ngFor="let author of item.author; let ai = index"><span *ngIf="ai != 0">, </span>{{author.name}}</span></div></div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+</div>
+<button mat-raised-button color="primary" [disabled]="loading" (click)="loadPage()">Load More</button>

@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "cd ./client && ng build && cd .. && node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3",
+    "rss-parser": "^3.12.0",
+    "xml2js": "^0.4.23"
+  }
+}

@@ -1,0 +1,18 @@
+<div class="page-title">Authors</div>
+<ng-container *ngIf="authors.length">
+    <div class="total-count">{{authors.length}} authors since {{sixMonths}}</div>
+    <mat-divider></mat-divider>
+    <div *ngFor="let author of authors; let i = index">
+        <div class="author-item">
+            <div class="list-count">
+                {{i}}
+            </div>
+            <div class="info-container">
+                <div class="info"><mat-icon>leaderboard</mat-icon><div class="count">{{author.articleIds.length}}</div></div>
+                <div class="info"><mat-icon>calendar_today</mat-icon><div class="recent">{{author.mostRecentArticleDate}}</div></div>
+                <div class="info"><mat-icon>account_box</mat-icon><div class="name">{{author.name}}</div></div>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+    </div>
+</ng-container>

@@ -1,0 +1,59 @@
+.page-title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.article-item {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    .title {
+        font-size: 20px;
+        padding: 15px 0;
+
+        .paging-item {
+            color: gray;
+            font-size: 12px;
+        }
+    }
+
+    .preview {
+        font-size: 12;
+        color: gray;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+    }
+
+    .author {
+        padding: 5px;
+        color: lightcoral;
+    }
+
+    .publish {
+        color: green;
+        padding: 5px;
+    }
+    mat-icon {
+        color: gray;
+    }
+}
+
+.article-item:hover {
+    background-color: lightgray;
+}
+
+button {
+    margin: 0 auto;
+    width: 100%;
+}
+

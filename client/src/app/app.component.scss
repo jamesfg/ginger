@@ -1,0 +1,11 @@
+.link-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .license {
+        color: gray;
+        font-size: 10px;
+        margin: auto 0;
+    }
+}
+
